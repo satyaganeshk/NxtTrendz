@@ -168,7 +168,7 @@ class ProductItemDetails extends Component {
                   >
                     <BsDashSquare className="quantity-controller-icon" />
                   </button>
-                  <p className="quantity">{quantity}</p>
+                  <p className="quantity d-inline-flex m-3">{quantity}</p>
                   <button
                     type="button"
                     className="quantity-controller-button"

@@ -19,19 +19,21 @@ const Cart = () => (
       return (
         <>
           <Header />
-          <div className='cart-container'>
+          <div className="cart-container">
             {showEmptyView ? (
               <EmptyCartView />
             ) : (
-              <div className='cart-content-container'>
-                <h1 className='cart-heading'>My Cart</h1>
-                <button
-                  type='button'
-                  className='remove-all-btn'
-                  onClick={onClickRemoveAllBtn}
-                >
-                  Remove All
-                </button>
+              <div className="cart-content-container">
+                <h1 className="cart-heading">My Cart</h1>
+                <div className="d-flex justify-content-end mb-3">
+                  <button
+                    type="button"
+                    className="btn btn-primary"
+                    onClick={onClickRemoveAllBtn}
+                  >
+                    Remove All
+                  </button>
+                </div>
                 <CartListView />
                 <CartSummary />
               </div>

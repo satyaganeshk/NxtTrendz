@@ -1,6 +1,8 @@
 import {Component} from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import LoginForm from './components/LoginForm'
 import Home from './components/Home'
 import Products from './components/Products'
